@@ -2,6 +2,7 @@ package com.netlol
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.netlol.databinding.ActivityHomeBinding
 
@@ -12,6 +13,7 @@ class HomeActivity : AppCompatActivity() {
         binding=ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setContentView(R.layout.activity_home)
+        Toast.makeText(applicationContext, "hai beb", Toast.LENGTH_SHORT).show()
 
         with(binding){
             with(rvFilmList){
